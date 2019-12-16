@@ -1,12 +1,13 @@
 # Loki Render
 
-Loki Render allows you to create your own render farm, serving Blender render jobs to a group of computers. Loki is easy to setup and runs on Linux, Windows, or Mac, making it a quick and flexible distributed network rendering solution!
+Loki Render allows you to create your own Blender render farm, serving Blender render jobs to a group of computers. Loki is easy to setup and runs on Linux, Windows, or Mac, making it a quick and flexible distributed network rendering solution!
 
-This is a fork of the original project by Daniel Petersen over on [Sourceforge](https://sourceforge.net/projects/loki-render/) 
+This is a fork of Mike Peralta's adaptation of the original project by Daniel Petersen over on [Sourceforge](https://sourceforge.net/projects/loki-render/), which works with Blender 2.80 (and higher)
 
 ##	Workflow
 
 A typical workflow to start utilizing Loki Render, is something like:
+
 1. Pick a machine to be the master, and start Loki Render in "Master" mode (or in "Master+Grunt" mode)
 2. Start Loki Render in Grunt mode on some other machines
 3. Configure the Master
@@ -22,12 +23,20 @@ You should have either Oracle's JDK 8 or OpenJDK 8 installed. This project is mo
 
 ## Getting Started
 
-* First make sure you have java installed on your computer. I test with OpenJDK 8, but Oracle's JDK 8 should also work.
-* Then, of course, you will want to grab the latest JAR file from the [release page](https://github.com/mikeperalta1/loki-render/releases), and save it somewhere
+* First make sure you have java installed on your computer. You can install OpenJDK 11 on Ubuntu with 
+```
+sudo apt-get install openjdk-11-jdk
+```
+* Then, of course, you will want to grab the latest LokiRender for Blender 2.80 JAR file from the [release page](https://github.com/straaljager/loki-render/releases), and save it somewhere
 * You can then launch Loki Render with a simple command:
 
 ```
-java -jar LokiRender-<version>.jar [<BlenderExe>] [MasterIP]
+java -jar LokiRender-<version>.jar [<path-to-BlenderExe>] [MasterIP]
+```
+
+For example:
+```
+java -jar LokiRender-280.jar /usr/bin/blender 123.456.789.001
 ```
 
 * Replace <version> to match the jar file you have
@@ -35,13 +44,13 @@ java -jar LokiRender-<version>.jar [<BlenderExe>] [MasterIP]
 * Use [\<BlenderExe\>] by adding the path to a Blender executable, to start Loki Render in grunt mode without the GUI (great for headless rendering)
 * Use [\<MasterIP\>] to specify the IP address of a server running Loki Render in Master mode, otherwise Loki Render will attempt to auto detect
 
-Examples:
+Other examples:
 ```
-java -jar LokiRender-071-1.jar
-java -jar LokiRender-071-1.jar /path/to/blender
-java -jar LokiRender-071-1.jar 192.168.17.45
-java -jar LokiRender-071-1.jar /path/to/blender 192.168.17.45
-java -jar /path/to/jar/folder/LokiRender-071-1.jar /path/to/blender 192.168.17.45
+java -jar LokiRender-280.jar
+java -jar LokiRender-280.jar /path/to/blender
+java -jar LokiRender-280.jar 192.168.17.45
+java -jar LokiRender-280.jar /path/to/blender 192.168.17.45
+java -jar /path/to/jar/folder/LokiRender-280.jar /path/to/blender 192.168.17.45
 ```
 
 ## Further Information
