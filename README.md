@@ -2,7 +2,7 @@
 
 Loki Render allows you to create your own Blender render farm, serving Blender render jobs to a group of computers. Loki is easy to setup and runs on Linux, Windows, or Mac, making it a quick and flexible distributed network rendering solution!
 
-This is a fork of Mike Peralta's adaptation of the original project by Daniel Petersen over on [Sourceforge](https://sourceforge.net/projects/loki-render/), which works with Blender 2.80 (and higher)
+This is a fork of Mike Peralta's LokiRender adaptation for Blender 2.80 (and higher) of the original project by Daniel Petersen over on [Sourceforge](https://sourceforge.net/projects/loki-render/). 
 
 ##	Workflow
 
