@@ -36,7 +36,7 @@ java -jar LokiRender-<version>.jar [<path-to-BlenderExe>] [MasterIP]
 
 For example:
 ```
-java -jar LokiRender-280.jar /usr/bin/blender 123.456.789.001
+java -jar LokiRender-2.80.jar /usr/bin/blender 123.456.789.001
 ```
 
 * Replace <version> to match the jar file you have
@@ -46,11 +46,11 @@ java -jar LokiRender-280.jar /usr/bin/blender 123.456.789.001
 
 Other examples:
 ```
-java -jar LokiRender-280.jar
-java -jar LokiRender-280.jar /path/to/blender
-java -jar LokiRender-280.jar 192.168.17.45
-java -jar LokiRender-280.jar /path/to/blender 192.168.17.45
-java -jar /path/to/jar/folder/LokiRender-280.jar /path/to/blender 192.168.17.45
+java -jar LokiRender-2.80.jar
+java -jar LokiRender-2.80.jar /path/to/blender
+java -jar LokiRender-2.80.jar 192.168.17.45
+java -jar LokiRender-2.80.jar /path/to/blender 192.168.17.45
+java -jar /path/to/jar/folder/LokiRender-2.80.jar /path/to/blender 192.168.17.45
 ```
 
 ## Further Information
